@@ -1,0 +1,7 @@
+/* stylelint-disable block-opening-brace-space-before */
+/* stylelint-disable-next-line no-missing-end-of-source-newline */
+@import "antd/dist/antd.css";
+
+body{
+  background-color: #F4F5F5;
+}
