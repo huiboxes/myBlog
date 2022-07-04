@@ -70,8 +70,16 @@
 
   .otherLogin{
     margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
     color: #1e80ff;
-    cursor: pointer;
+
+    span{
+      cursor: pointer;
+      &:last-child{
+        color: #888;
+      }
+    }
   }
 
   .loginPrivacy{

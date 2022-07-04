@@ -8,7 +8,7 @@ interface ICountDownProps {
 
 const CountDown = (props: ICountDownProps) => {
   const { time, onEnd } = props
-  const [count, setCount] = useState(5 || 60)
+  const [count, setCount] = useState(time || 60)
 
   useEffect(() => {
     const timerId = setInterval(() => {
