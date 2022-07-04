@@ -63,7 +63,7 @@ const Login = ({ isShow = false, onClose }: ILoginProps) => {
         <input
           type='text'
           name='phone'
-          placeholder='请输入手机号'
+          placeholder={loginType === 'password' ? '账号登录' : '手机号登录'}
           value={form.phone}
           onChange={handleFormChange}
         />
@@ -102,7 +102,7 @@ const Login = ({ isShow = false, onClose }: ILoginProps) => {
         <div className={styles.otherLogin} onClick={handleOAuthGithub}>
           <span>使用Github登录</span>
           <span onClick={switchLoginType}>
-            使用{loginType === 'password' ? '账号登录' : '手机号登录'}
+            使用{loginType === 'password' ? '手机号登录' : '密码登录'}
           </span>
         </div>
 
